@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport({
     }
 })
 
-//Get all blogs Method
+//Get all blogs method
 router.get('/blogs', async (req, res) => {
     try {
         const data = await BlogModel.find();
